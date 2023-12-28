@@ -2,6 +2,10 @@
 "..\output\main.o"
 "..\output\stm32f10x_it.o"
 "..\output\system_stm32f10x.o"
+"..\output\rs485.o"
+"..\output\modbus.o"
+"..\output\modbus_crc.o"
+"..\output\modbus_tim.o"
 "..\output\core_cm3.o"
 "..\output\startup_stm32f10x_hd.o"
 "..\output\misc.o"
@@ -27,6 +31,9 @@
 "..\output\stm32f10x_tim.o"
 "..\output\stm32f10x_usart.o"
 "..\output\stm32f10x_wwdg.o"
+"..\output\systick.o"
+"..\output\usart.o"
+"..\output\nvic.o"
 --library_type=microlib --strict --scatter "..\Output\F103_modbus.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

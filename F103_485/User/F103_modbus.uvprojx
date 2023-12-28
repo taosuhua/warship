@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_HD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CORE;..\FWLIB\inc;..\Hardware;..\User</IncludePath>
+              <IncludePath>..\CORE;..\FWLIB\inc;..\Hardware;..\User;..\System</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -402,6 +402,28 @@
         </Group>
         <Group>
           <GroupName>HARDWARE</GroupName>
+          <Files>
+            <File>
+              <FileName>rs485.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\rs485.c</FilePath>
+            </File>
+            <File>
+              <FileName>modbus.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\modbus.c</FilePath>
+            </File>
+            <File>
+              <FileName>modbus_crc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\modbus_crc.c</FilePath>
+            </File>
+            <File>
+              <FileName>modbus_tim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\modbus_tim.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>CORE</GroupName>
@@ -540,6 +562,23 @@
         </Group>
         <Group>
           <GroupName>SYSTEM</GroupName>
+          <Files>
+            <File>
+              <FileName>systick.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\System\systick.c</FilePath>
+            </File>
+            <File>
+              <FileName>usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\System\usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>nvic.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\System\nvic.c</FilePath>
+            </File>
+          </Files>
         </Group>
       </Groups>
     </Target>
